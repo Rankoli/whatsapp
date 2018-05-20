@@ -1,0 +1,52 @@
+
+.chat-layout {
+ form {
+    position: absolute;
+    top: 92%;
+ }
+}
+.message-input {
+    display: flex;
+    justify-content: center;
+
+}
+
+.chat-body {
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+}
+
+.my-chat-message {
+display: flex;
+border: 1px solid darken($off-white, 7%);
+border-radius: 5px;
+box-shadow: 5px 10px 18px black;
+width: 200px;
+align-self: flex-end;
+margin: $m-size;
+justify-content: space-between;
+padding: $s-size;
+}
+
+.contact-chat-message {
+@extend .my-chat-message;
+align-self: flex-start;
+flex-direction: column;
+}
+
+.chat-message__time {
+    font-size: 9px;
+    margin-top: auto;
+
+}
+
+.chat-header{
+    color: $blue;
+    font-weight: bold;
+}
+
+.chat-spacing{
+ display: flex;
+ justify-content: space-between;
+}

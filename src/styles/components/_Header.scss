@@ -1,0 +1,32 @@
+.header {
+  background: rgb(2, 112, 79);
+}
+
+.header__content {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: $s-size 0;
+  color: white;
+  margin-bottom: 0;
+  h4{
+    padding: 0 $s-size 0 $s-size;
+  }
+}
+.header__content__two {
+   @extend  .header__content;
+   justify-content: flex-start;
+   padding: 0 0 0 $s-size;
+}
+
+.header__title {
+  color: white;
+  text-decoration: none;
+  padding: $s-size 0;
+
+  h1 {
+    padding-left: $s-size;
+    margin: 0;
+    font-size: $font-size-large;
+  }
+}
