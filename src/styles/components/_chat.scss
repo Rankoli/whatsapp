@@ -1,14 +1,17 @@
 
 .chat-layout {
+    display: flex;
+    flex-flow: column nowrap;
  form {
-    position: absolute;
-    top: 92%;
+     margin-top: auto;
+     align-self: stretch;
  }
 }
+
+
 .message-input {
     display: flex;
     justify-content: center;
-
 }
 
 .chat-body {

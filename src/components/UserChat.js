@@ -39,7 +39,7 @@ export default class UserChat extends React.Component {
     e.preventDefault();
     e.target.elements.message.value = '';
     axios
-      .get(`http://jsonplaceholder.typicode.com/todos/${b++}`)
+      .get(`https://jsonplaceholder.typicode.com/posts/${b++}`)
       .then((Response) => {
         const user = Response.data;
         const {userId, id, title, completed} = user
@@ -82,14 +82,13 @@ export default class UserChat extends React.Component {
 
     return (
       <div className="chat-layout">
-        <div>
+        <div className="chat-start">
         <HeaderUserChat name={this.state.name} imgPath={this.state.imgPath}/>
         <Bubble messages={messages} name={this.state.name}/>
         </div>
 
         <div className="message-input">
-
-        <form onSubmit={this.onSubmit}>
+        <form className="form" onSubmit={this.onSubmit}>
           <input
             type="text"
             name="message"
