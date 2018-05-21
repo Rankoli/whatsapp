@@ -7,8 +7,8 @@ const userListReducerDefaultState = [{
     lastMessage: "Mashina:)", //should change //edit
     time: "15:55", //should change edit
     imgPath: "/images/favicon.png",
-    myMessages: ["me1", "me2","WHATSAPP"], //should change -- push
-    contactMessages: ["cont1", "cont2","sunt aut facere repellat provident occaecati excepturi optio reprehenderit"] //should auto change
+    myMessages: ["me1", "me2"], //should change -- push
+    contactMessages: ["cont1", "cont2"] //should auto change
   },
   {
     userId: 2,

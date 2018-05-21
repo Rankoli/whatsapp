@@ -39,7 +39,7 @@ export default class UserChat extends React.Component {
     e.preventDefault();
     e.target.elements.message.value = '';
     axios
-      .get(`https://jsonplaceholder.typicode.com/posts/${b++}`)
+      .get(`https://jsonplaceholder.typicode.com/todos/${b++}`)
       .then((Response) => {
         const user = Response.data;
         const {userId, id, title, completed} = user
